@@ -13,17 +13,18 @@ Here I am making simple REST API with koa.js and Elasticsearch. In which we are 
 
 
 **Folder Structure :** 
-	```
-	Model : Query for elasticsearch to fetch data
-	Controller : Make call to model, and return data provided
-	System/Core : Routing logic in router.js, and all error response in errorResponse.js
-	```
+	
+	- Model : Query for elasticsearch to fetch data
+	- Controller : Make call to model, and return data provided
+	- System/Core : Routing logic in router.js, and all error response in errorResponse.js
+	
 **Files :** 
-	```
-	elasticsearch_schema.json : Simple elasticsearch schema for autocomplete.
-	bulk_insert.sh : Sample records to insert into elasticsearch
-	```
+
+	- elasticsearch_schema.json : Simple elasticsearch schema for autocomplete.
+	- bulk_insert.sh : Sample records to insert into elasticsearch
+
 **List Of API's**
+
 	1. Insert / Update Documents into Elasticsearch
 	2. Autocomplete (search) API
 
@@ -41,28 +42,28 @@ Here I am making simple REST API with koa.js and Elasticsearch. In which we are 
 		Output : 
 
 		If Inserted Successfully : 
-			```					
+								
 			{
 			    "success": true,
 			    "message": "Document Inserted Successfully!!!"
 			}
-			```
+			
 
 		If Already Exists : 
-			```
+			
 			{
 			    "success": true,
 			    "message": "Document Updated Successfully!!!"
 			}
-			```
+			
 
 		If Error Exists :  
-			```
+			
 			{
 			    "success": false,
 			    "message": "Sorry Something went Wrong!!!"
 			}
-			```
+			
 	
 
 	2. Autocomplete (search) API : 
@@ -72,7 +73,7 @@ Here I am making simple REST API with koa.js and Elasticsearch. In which we are 
 		Output : 
 
 		Success : 
-			```
+			
 			[
 			    {
 			        "_index": "cities",
@@ -90,10 +91,10 @@ Here I am making simple REST API with koa.js and Elasticsearch. In which we are 
 			        }
 			    }
 			]
-			```
+			
 
 		If Routing Error : 
-			```
+			
 			{
 			    "meta": {
 			        "status": 404,
@@ -107,7 +108,7 @@ Here I am making simple REST API with koa.js and Elasticsearch. In which we are 
 			}		
 
 		Query String Error : 
-			```
+			
 			{
 			    "meta": {
 			        "status": 200,
@@ -119,4 +120,3 @@ Here I am making simple REST API with koa.js and Elasticsearch. In which we are 
 			    },
 			    "data": []
 			}
-			``` 					
