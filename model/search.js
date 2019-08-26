@@ -5,7 +5,6 @@ const indexType = 'city'; /* Elatascisearch type name */
 module.exports = {
 
     async getAutocomplete(queryStr) {
-        var restResponse = {};
 
         var queryString = queryStr.trim();
 

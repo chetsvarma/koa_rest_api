@@ -7,11 +7,12 @@ module.exports = {
         if (typeof ctx.request.query.queryStr !== 'undefined' && ctx.request.query.queryStr !== null) {
             var queryStr = ctx.request.query.queryStr;
 
+            ctx.set('Access-Control-Allow-Origin', '*');
+            ctx.set('Content-Type', 'application/json');
+
             const resultData = esModel.getAutocomplete(queryStr);
-            // console.log(resultData)
+
             return resultData.then(function(result) {
-                ctx.set('Access-Control-Allow-Origin', '*');
-                ctx.set('Content-Type', 'application/json');
                 ctx.body = result
             });
         } else {
