@@ -4,6 +4,14 @@ A simple REST API for simple Autocomplete using Koa.js (Nodejs) and Elasticsearc
 
 Here I am making simple REST API with koa.js and Elasticsearch. In which we are making simple autocomple using elasticsearch.
 
+Versions : 
+
+	npm : 3.5.2
+	node : 8.10.0
+	Koa : 2.8.1
+	elasticsearch : 6.5.4
+
+
 Folder Structure : 
 
 Model : Query for elasticsearch to fetch data
