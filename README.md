@@ -41,7 +41,7 @@ Here I am making simple REST API with koa.js and Elasticsearch. In which we are 
 		Output : 
 
 		If Inserted Successfully : 
-			```javascript					
+			```					
 			{
 			    "success": true,
 			    "message": "Document Inserted Successfully!!!"
@@ -49,7 +49,7 @@ Here I am making simple REST API with koa.js and Elasticsearch. In which we are 
 			```
 
 		If Already Exists : 
-			```javascript
+			```
 			{
 			    "success": true,
 			    "message": "Document Updated Successfully!!!"
@@ -57,7 +57,7 @@ Here I am making simple REST API with koa.js and Elasticsearch. In which we are 
 			```
 
 		If Error Exists :  
-			```javascript
+			```
 			{
 			    "success": false,
 			    "message": "Sorry Something went Wrong!!!"
@@ -72,7 +72,7 @@ Here I am making simple REST API with koa.js and Elasticsearch. In which we are 
 		Output : 
 
 		Success : 
-			```javascript
+			```
 			[
 			    {
 			        "_index": "cities",
@@ -93,7 +93,7 @@ Here I am making simple REST API with koa.js and Elasticsearch. In which we are 
 			```
 
 		If Routing Error : 
-			```javascript
+			```
 			{
 			    "meta": {
 			        "status": 404,
@@ -107,7 +107,7 @@ Here I am making simple REST API with koa.js and Elasticsearch. In which we are 
 			}		
 
 		Query String Error : 
-			```javascript
+			```
 			{
 			    "meta": {
 			        "status": 200,
